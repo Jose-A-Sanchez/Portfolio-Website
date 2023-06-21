@@ -1,0 +1,872 @@
+@import Url("Https://Fonts.Googleapis.Com/Css2?Family=Poppins:ital,Wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&Display=Swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: Border-Box;
+}
+
+Body {
+  font-family: "Poppins", Sans-Serif;
+}
+
+.Header {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url(https://lh3.googleusercontent.com/ko2-BG47XbJz4gkEhEggSIWmUVc7HlOx2lXYgCdEZPSC_boPuiJAjuAkBKSqm3v4rZ_qaRUU7faq1SL5xx6knInajFNSlzAkyr7D21ZiJqLPUj7-VucZ5GLkHNCE84UkGtfn5VmfJw=w2400);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+}
+
+.Container {
+  max-width: 1200px;
+  width: 100%;
+  margin: Auto;
+}
+
+/* ////........Navbar.......//// */
+
+.Navbar {
+  position: absolute;
+  top: 8px;
+  left: 70vw;
+}
+
+.Navbar-Container {
+  display: Flex;
+  justify-content: Space-Between;
+  align-items: Center;
+  height: 65px;
+}
+
+.Menu-Items {
+  display: Flex;
+}
+
+.Menu-Items Li {
+  list-style: None;
+  padding: 1rem;
+}
+
+.Menu-Items A {
+  text-decoration: None;
+  color: ghostwhite !important;
+  font-size: 1.3rem;
+  padding: 0.3rem;
+}
+
+.Header.Menu-Items A {
+  color: black;
+}
+
+.Menu-Items A:hover {
+  border-bottom: 2px Solid ghostwhite;
+}
+
+.Navbar .Logo {
+  order: 1;
+  color: #f0f0e6;
+  font-size: 3rem;
+}
+
+/* ////........Home Content........//// */
+
+.Home-Content .Name {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 300px;
+  color: ghostwhite !important;
+  width: 100%;
+  text-align: Center;
+}
+
+.Home-Content .Name H1 {
+  font-size: 4rem;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.Home-Content .Name P {
+  color: ghostwhite !important;
+  font-size: 2rem;
+  padding: 5px;
+}
+
+.profile_img {
+  display: block;
+  width: 180px;
+  height: 180px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 50%;
+}
+
+.Angle-Down-Icon {
+  position: Absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: Translate(-50%, -50%);
+  font-size: 3rem;
+  border: 3px Solid ghostwhite;
+  border-radius: 50%;
+}
+
+.Angle-Down-Icon A {
+  text-decoration: none;
+  color: ghostwhite;
+  padding: 0.5rem;
+}
+.Angle-Down-Icon:hover {
+  background-color: #080c09;
+}
+
+/* ////........About Me........//// */
+
+.About-Me {
+  background: whitesmoke;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+.About-Me .About-Heading {
+  color: #02aab0;
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: Center;
+}
+
+.About-Content Img {
+  height: 200px;
+  width: 170px;
+  object-fit: Cover;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.About-Content P {
+  font-size: 1.5rem;
+  color: black;
+  padding: 0 2.3rem;
+  text-align: Center;
+}
+
+.Skills .Skills-Heading {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #02aab0;
+  text-align: Center;
+}
+
+.About-Me .About-Content {
+  display: Flex;
+  flex-wrap: Wrap;
+  padding-top: 15%;
+}
+
+.About-Content .Left-Content {
+  flex-basis: 45%;
+  text-align: Center;
+}
+
+.About-Content .Right-Content {
+  flex-basis: 45%;
+}
+
+/* ///.....Skill Bar....../// */
+
+.Skills-Bar {
+  padding: 25px 30px;
+}
+
+.Skills-Bar .Bar {
+  margin: 25px 0;
+}
+
+.Skills-Bar .Bar .Info Span {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.Skills-Bar .Bar .Info {
+  margin-bottom: 8px;
+  color: black;
+}
+
+.Skills-Bar .Bar .Progress-Line {
+  position: Relative;
+  height: 10px;
+  width: 550px;
+  background: black;
+  border-radius: 10px;
+  transform: ScaleX(0);
+  transform-origin: Left;
+  animation: Animate 1s Cubic-Bezier(1, 0, 0.5, 1) Forwards;
+}
+
+.Bar .Progress-Line Span {
+  position: Absolute;
+  background: #02aab0;
+  height: 100%;
+  border-radius: 10px;
+  transform: ScaleX(0);
+  transform-origin: Left;
+  animation: Animate 1s 1s Cubic-Bezier(1, 0, 0.5, 1) Forwards;
+}
+
+@keyframes Animate {
+  100% {
+    transform: ScaleX(1);
+  }
+}
+
+.Progress-Line .Html {
+  width: 50%;
+}
+.Progress-Line .Css {
+  width: 40%;
+}
+
+.Progress-Line .Javascript {
+  width: 30%;
+}
+.Progress-Line .SQL {
+  width: 30%;
+}
+.Progress-Line .Python {
+  width: 30%;
+}
+
+.Bar .Progress-Line Span::before {
+  position: Absolute;
+  content: "";
+  height: 0;
+  right: 0;
+  top: -12px;
+  width: 0;
+  border: 7px Solid Transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-style: #f0f0f0;
+  border-top-color: #f0f0f0;
+}
+
+.Bar .Progress-Line Span::after {
+  position: Absolute;
+  right: 0;
+  top: -28px;
+  color: black;
+  font-size: 12px;
+  font-weight: 700;
+  background: #f0f0f0;
+  padding: 1px 8px;
+  border-radius: 3px;
+}
+
+.Progress-Line .Html::after {
+  content: "50%";
+}
+.Progress-Line .Css::after {
+  content: "40%";
+}
+.Progress-Line .Bootstrap::after {
+  content: "30%";
+}
+.Progress-Line .Javascript::after {
+  content: "30%";
+}
+.Progress-Line .SQL::after {
+  content: "30%";
+}
+.Progress-Line .Python::after {
+  content: "30%";
+}
+
+.Navbar.Solid {
+  background-color: ghostwhite;
+  transition: Background-Color 1s Ease 0s;
+  box-shadow: 0 0 4px Rgb(7 55 74 / 20%);
+  z-index: 500;
+}
+
+.Navbar.Solid .Navbar-Brand {
+  display: Inline-Block;
+  color: ghostwhite;
+  transition: Color 1s Ease 0s;
+}
+
+.Navbar-Brand {
+  display: None;
+  color: #f0f0e6;
+  font-weight: 400;
+}
+
+.Work-Arrow {
+  margin: 2rem 0;
+}
+
+.Work-Arrow A {
+  font-size: 2.2rem;
+  text-decoration: None;
+  color: #02aab0;
+  text-align: center;
+}
+
+.Work-Arrow A:hover {
+  text-decoration: underline;
+}
+
+.Work-Arrow-2 {
+  margin: 10rem 0;
+}
+
+.Work-Arrow-2 A {
+  font-size: 2rem;
+  text-decoration: None;
+  color: ghostwhite;
+  display: None;
+}
+
+/* ////.....Portfolio......///// */
+
+.Portfolio {
+  background: whitesmoke;
+  padding: 3rem 0;
+  height: 100vh;
+  border-top: 2px solid black;
+}
+
+.Proj-Heading H1 {
+  text-align: Center;
+  color: #02aab0;
+  font-size: 2.9rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+}
+
+.Proj-1 {
+  display: flex;
+  justify-content: Center;
+  align-items: Center;
+  margin-left: -700px;
+}
+
+.Proj-1 Img {
+  height: 330px;
+  width: 380px;
+  object-fit: Cover;
+  border-radius: 50%;
+  box-shadow: 0 20px 10px -10px Rgb(37 41 52 / 31%);
+  margin-right: 1.7rem;
+}
+
+.Proj-1 .Proj1-Details {
+  width: 32rem;
+}
+
+.Proj-1 .Proj1-Details I {
+  font-size: 1.5rem;
+  color: #02aab0;
+}
+
+.Proj-1 .Proj1-Details H2 {
+  font-size: 2rem;
+  color: #02aab0;
+}
+
+.Proj-1 .Proj1-Details P {
+  font-size: 1.3rem;
+  color: #02aab0;
+  font-weight: 600;
+}
+
+.Proj-1 .Proj1-Details Button {
+  background: #02aab0;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  width: 150px;
+  border: None;
+  border-bottom: 2px Solid #22313f;
+}
+
+.Proj-1 .Proj1-Details Button A {
+  text-decoration: None;
+  color: ghostwhite;
+  font-size: 1.1rem;
+  transition: 0.2s Ease-In-Out;
+  text-align: Center;
+  transition: 0.3s Ease-In-Out;
+}
+
+.Proj-1 .Proj1-Details Button .Fas {
+  font-size: 0.7rem;
+  padding: 0.3rem;
+  transition: 0.2s Ease-In-Out;
+  color: ghostwhite;
+}
+
+.Proj-1 .Proj1-Details Button:hover {
+  background: #00cdac;
+}
+
+.Proj-1 .Proj1-Details Button:hover A,
+.Proj-1 .Proj1-Details Button:hover .Fas {
+  color: ghostwhite;
+}
+
+/* ////.....Proj2.....//// */
+
+.Proj-2 {
+  display: Flex;
+  justify-content: center;
+  align-items: Center;
+  margin-top: 3rem;
+  margin-left: -700px;
+}
+
+.Proj-2 Img {
+  height: 330px;
+  width: 380px;
+  object-fit: Cover;
+  border-radius: 50%;
+  box-shadow: 0 20px 10px -10px Rgb(37 41 52 / 31%);
+  margin-right: 1.7rem;
+}
+
+.Proj-2 .Proj2-Details {
+  width: 32rem;
+}
+
+.Proj-2 .Proj2-Details I {
+  font-size: 1.5rem;
+  color: #02aab0;
+}
+
+.Proj-2 .Proj2-Details H2 {
+  font-size: 2rem;
+  color: #02aab0;
+}
+
+.Proj-2 .Proj2-Details P {
+  font-size: 1.3rem;
+  color: #02aab0;
+  font-weight: 600;
+}
+
+.Proj-2 .Proj2-Details Button {
+  background: #02aab0;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  width: 150px;
+  border: None;
+  border-bottom: 2px Solid #22313f;
+}
+
+.Proj-2 .Proj2-Details Button A {
+  text-decoration: None;
+  color: ghostwhite;
+  font-size: 1.1rem;
+  transition: 0.2s Ease-In-Out;
+  text-align: Center;
+  transition: 0.3s Ease-In-Out;
+}
+
+.Proj-2 .Proj2-Details Button .Fas {
+  font-size: 0.7rem;
+  padding: 0.3rem;
+  transition: 0.2s Ease-In-Out;
+  color: ghostwhite;
+}
+
+.Proj-2 .Proj2-Details Button:hover {
+  background: #00cdac;
+}
+
+.Proj-2 .Proj2-Details Button:hover A,
+.Proj-2 .Proj2-Details Button:hover .Fas {
+  color: ghostwhite;
+}
+
+/* ////.....Proj3.....//// */
+
+.Proj-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: Center;
+  margin-left: 600px;
+  margin-top: -50vh;
+}
+
+.Proj-3 Img {
+  height: 330px;
+  width: 380px;
+  object-fit: Cover;
+  border-radius: 50%;
+  box-shadow: 0 20px 10px -10px Rgb(37 41 52 / 31%);
+  margin-right: 1.7rem;
+}
+
+.Proj-3 .Proj3-Details {
+  width: 32rem;
+  margin-left: 900px;
+  margin-top: -25vh;
+}
+
+.Proj-3 .Proj3-Details I {
+  font-size: 1.5rem;
+  color: #02aab0;
+}
+
+.Proj-3 .Proj3-Details H2 {
+  font-size: 2rem;
+  color: #02aab0;
+}
+
+.Proj-3 .Proj3-Details P {
+  font-size: 1.3rem;
+  color: #02aab0;
+  font-weight: 600;
+}
+
+.Proj-3 .Proj3-Details Button {
+  background: #02aab0;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  width: 150px;
+  border: None;
+  border-bottom: 2px Solid #22313f;
+}
+
+.Proj-3 .Proj3-Details Button A {
+  text-decoration: None;
+  color: ghostwhite;
+  font-size: 1.1rem;
+  transition: 0.2s Ease-In-Out;
+  text-align: Center;
+  transition: 0.3s Ease-In-Out;
+}
+
+.Proj-3 .Proj3-Details Button .Fas {
+  font-size: 0.7rem;
+  padding: 0.3rem;
+  transition: 0.2s Ease-In-Out;
+  color: ghostwhite;
+}
+
+.Proj-3 .Proj3-Details Button:hover {
+  background: #00cdac;
+}
+
+.Proj-3 .Proj3-Details Button:hover A,
+.Proj-3 .Proj3-Details Button:hover .Fas {
+  color: ghostwhite;
+}
+
+.More-Work {
+  display: flex;
+  text-align: Center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30vh;
+}
+
+.More-Work P {
+  font-size: 1.6rem;
+  color: #02aab0;
+  font-weight: 500;
+}
+
+.More-Work A {
+  text-decoration: None;
+  color: #02aab0;
+  font-size: 2.3rem;
+}
+
+.More-Work A:hover {
+  border-bottom: 2px Solid #02aab0;
+}
+
+/* ////......Contact......///// */
+
+.Contact {
+  background: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url(https://lh3.googleusercontent.com/yC2NizcRoy4e-m7-CeQzsn7GWUoX7hz8od5XDLoSkVFIf7-G0kLvg6qQ2TvhGdRb9QXcExzdPdxjZSd4OcqPZEUAkzW5FaOh4zV7XMffGkuKnCgtO6ijzfEIe5Q9PrPRR_rqT0hkRw=w2400);
+  position: relative;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.Contact-Content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: Translate(-50%, -50%);
+  text-align: Center;
+}
+
+.Contact-Content H2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: ghostwhite;
+  padding-bottom: 0.5rem;
+}
+
+.Contact-Content .Mail {
+  color: ghostwhite;
+  padding-bottom: 0.2rem;
+  font-size: 1rem;
+}
+
+.Contact-Content .Links {
+  color: ghostwhite;
+  padding: 0.5rem;
+  padding-bottom: 1.8rem;
+  font-size: 1rem;
+}
+
+.Contact-Content A {
+  text-decoration: None;
+  color: ghostwhite;
+  padding: 0.5rem;
+  transition: 0.3s Ease-In-Out;
+}
+
+.Contact-Content A:hover {
+  color: #02aab0;
+}
+.Top {
+  padding-top: 150px;
+}
+
+/* ////......Media Query......//// */
+
+@media (max-width: 500px) {
+  Html {
+    font-size: 60%;
+  }
+
+  Header {
+    background-size: auto;
+  }
+
+  .Navbar {
+    position: fixed;
+    left: 45%;
+  }
+
+  .About-Content .Left-Content {
+    flex-basis: 100%;
+    text-align: Center;
+  }
+
+  .About-Content .Right-Content {
+    flex-basis: 100%;
+  }
+
+  .Skills {
+    width: 100%;
+  }
+
+  .Skills-Bar .Bar .Progress-Line {
+    width: 100%;
+  }
+
+  .Work-Arrow {
+    display: none;
+  }
+
+  .Right-Content H1 {
+    margin-top: 3.2rem;
+  }
+
+  .Proj-1 {
+    display: Flex;
+    justify-content: Center;
+    flex-direction: Column;
+  }
+
+  .Proj-1 Img {
+    height: 230px;
+    width: 290px;
+    margin-bottom: 0.5rem;
+  }
+
+  .Proj-2 {
+    display: Flex;
+    justify-content: Center;
+    flex-direction: Column;
+  }
+
+  .Proj-2 Img {
+    height: 250px;
+    width: 290px;
+    margin-bottom: 0.5rem;
+  }
+
+  .Work-Arrow-2 A {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #283e2f;
+    display: Block;
+    text-align: Center;
+  }
+
+  .Work-Arrow-2 A:hover {
+    text-decoration: underline;
+    color: ghostwhite;
+  }
+
+  .Contact-Content {
+    width: 100%;
+  }
+}
+
+@media (min-width: 501px) And (max-width: 768px) {
+  Html {
+    font-size: 65%;
+  }
+
+  Header {
+    background-size: auto;
+  }
+
+  .Navbar {
+    position: fixed;
+    left: 44%;
+  }
+
+  .About-Content .Left-Content {
+    flex-basis: 100%;
+    text-align: Center;
+  }
+
+  .About-Content .Right-Content {
+    flex-basis: 100%;
+  }
+
+  .Skills {
+    width: 100%;
+  }
+
+  .Skills-Bar .Bar .Progress-Line {
+    width: 100%;
+  }
+
+  .Work-Arrow {
+    display: None;
+  }
+
+  .Right-Content H1 {
+    margin-top: 3.2rem;
+  }
+
+  .Proj-1 {
+    display: Flex;
+    justify-content: Center;
+    flex-direction: Column;
+  }
+
+  .Proj-1 Img {
+    height: 240px;
+    width: 290px;
+    margin-bottom: 0.5rem;
+  }
+
+  .Proj-2 {
+    display: Flex;
+    justify-content: Center;
+    flex-direction: Column;
+  }
+
+  .Proj-2 Img {
+    height: 240px;
+    width: 290px;
+    margin-bottom: 0.5rem;
+  }
+
+  .Work-Arrow-2 A {
+    font-size: 1.3rem;
+    text-decoration: None;
+    color: #283e2f;
+    display: Block;
+    text-align: Center;
+  }
+
+  .Work-Arrow-2 A:hover {
+    color: ghostwhite;
+    text-decoration: underline;
+  }
+  .Contact-Content {
+    width: 100%;
+  }
+}
+
+@media (min-width: 769px) And (max-width: 1200px) {
+  Html {
+    font-size: 70%;
+  }
+
+  Header {
+    background-size: auto;
+  }
+
+  .Navbar {
+    position: fixed;
+    left: 100%;
+  }
+
+  .About-Content .Left-Content {
+    flex-basis: 100%;
+    text-align: Center;
+  }
+
+  .About-Content .Right-Content {
+    flex-basis: 100%;
+  }
+
+  .Skills {
+    width: 100%;
+    display: Flex;
+    flex-direction: Column;
+    justify-content: Center;
+    align-items: Center;
+  }
+
+  .Work-Arrow {
+    display: None;
+  }
+
+  .Left-Content H1 {
+    margin-top: 3.2rem;
+    text-align: Center;
+  }
+
+  .Right-Content H1 {
+    margin-top: 3.2rem;
+    text-align: Center;
+  }
+
+  .Work-Arrow-2 A {
+    font-size: 1.3rem;
+    text-decoration: None;
+    color: #25b79f;
+    display: Block;
+    text-align: Center;
+  }
+
+  .Contact-Content {
+    width: 100%;
+  }
+}
+
+@media (orientation: Landscape) And (max-height: 500px) {
+  .Header {
+    height: 90vmax;
+  }
+}
